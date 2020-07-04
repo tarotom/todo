@@ -3,18 +3,22 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Todos</h3>
+
+      <div>
+        <h5>Title of todo 1</h5>
+        <p>Description of todo 1</p>
+      </div>
+
+      <div>
+        <h5>Title of todo 2</h5>
+        <p>Description of todo 2</p>
+      </div>
+
+      <div>
+        <h5>Title of todo 3</h5>
+        <p>Description of todo 3</p>
+      </div>
     </div>
   );
 }
