@@ -1,24 +1,14 @@
 import React from 'react';
+import Todo from "./components/Todo";
 
-function App() {
+const App = () => {
   return (
     <div>
       <h3>Todos</h3>
 
-      <div>
-        <h5>Title of todo 1</h5>
-        <p>Description of todo 1</p>
-      </div>
-
-      <div>
-        <h5>Title of todo 2</h5>
-        <p>Description of todo 2</p>
-      </div>
-
-      <div>
-        <h5>Title of todo 3</h5>
-        <p>Description of todo 3</p>
-      </div>
+      <Todo title="Title of todo 1" description="Description of todo 1"/>
+      <Todo title="Title of todo 2" description="Description of todo 2"/>
+      <Todo title="Title of todo 3" description="Description of todo 3"/>
     </div>
   );
 }
