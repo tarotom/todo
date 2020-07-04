@@ -4,7 +4,7 @@ import Todo from "./components/Todo";
 const App = () => {
   return (
     <div>
-      <h3>Todos</h3>
+      <h1>Todos</h1>
 
       <Todo title="Title of todo 1" description="Description of todo 1"/>
       <Todo title="Title of todo 2" description="Description of todo 2"/>
