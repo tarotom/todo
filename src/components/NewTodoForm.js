@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const NewTodoForm = (props) => {
   const [showForm, setShowForm] = useState(true);
+  const [todoTitle, setTodoTitle] = useState("");
+  const [todoDescription, setTodoDescription] = useState("");
 
   const handleNewTodoSubmit = (event) => {
     event.preventDefault();
@@ -9,11 +11,19 @@ const NewTodoForm = (props) => {
     props.setShowForm(false);
   }
 
+  const handleTodoTitleChange = (event) => {
+    setTodoTitle(event.target.value);
+  }
+
+  const handleTodoDescriptionChange = (event) => {
+    setTodoDescription(event.target.value);
+  }
+
   return (
       <div>
         <form style={{backgroundColor: "cyan"}} onSubmit={handleNewTodoSubmit}>
-          <input type="text" value="" placeholder="Title"/>
-          <input type="text" value="" placeholder="Description"/>
+          <input type="text" value={todoTitle} placeholder="Title" onChange={handleTodoTitleChange}/>
+          <input type="text" value={todoDescription} placeholder="Description" onChange={handleTodoDescriptionChange}/>
           <input type="submit" value="Submit" />
         </form>
       </div>
