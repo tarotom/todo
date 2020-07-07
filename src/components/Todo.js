@@ -5,6 +5,7 @@ const Todo = (props) => {
     <div style={{backgroundColor: "red"}}>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
+      <p>{props.priority}</p>
     </div>
   )
 }
