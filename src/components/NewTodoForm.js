@@ -8,7 +8,6 @@ const NewTodoForm = (props) => {
 
   const handleNewTodoSubmit = (event) => {
     event.preventDefault();
-    console.log("event on submit ", event);
     props.setShowForm(false);
   }
 

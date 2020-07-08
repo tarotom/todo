@@ -6,7 +6,6 @@ const App = () => {
   const [showNewTodoForm, setShowNewTodoForm] = useState(false);
 
   const handleOpenNewTodoForm = () => {
-    console.log("Opening form for creating a new Todo!");
     setShowNewTodoForm(!showNewTodoForm);
   }
 
